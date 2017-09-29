@@ -1,13 +1,18 @@
 <div> 
 <?php
+ echo "<table>";
 $y=1;
 for ($j=1;$j<10; $j++){
-    for ($i=1; $i<10; $i++) {
+  echo '<tr>';
+  for ($i=1; $i<10; $i++) {
+	  echo '<td>';
 	$y=$i*$j;
 	echo "$i*$j=$y";
-	echo '<br> ';
-
+	 echo '</td>';
+	
     }
+	echo '</tr>';
 }
-?>
+echo "</table>"
+?>"
 </div>
